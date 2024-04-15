@@ -66,6 +66,7 @@ input {
     width: 13%;
     height: 60px;
     border-radius: 25px;
+    cursor: pointer;
     position: relative;
     left: 62%;
     bottom: 280px;
