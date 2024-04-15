@@ -1,0 +1,199 @@
+* {
+	-webkit-box-sizing: border-box;
+	-mod-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1280px;
+	margin:auto;
+}
+
+header {
+	position: relative;
+	box-shadow: 0 0 10px #ddd;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+header  .logo {
+	width: 110px;
+	font-family: "Lobster", sans-serif;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	color: black;
+}
+
+header .navigation{
+	display: flex;
+}
+
+header .navigation li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	position: relative;
+	padding: 0 30px;
+	color: black;
+  font-weight: 500;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+header .navigation li a::before{
+  content:"";
+	width: 100%;
+	height: 4px;
+	background-color: #3A795B;
+	bottom: 0;
+	left: -100%;
+	position: absolute;
+	transition: 0.3s;
+}
+
+header .navigation li a:hover::before {
+  left: 0;
+}
+
+header button {
+  padding: 5px;
+	border-radius: 10px;
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+	cursor: pointer;
+}
+header button:hover {
+  background-color: #3A795B;
+	color: #ddd;
+}
+
+.landing-feature {
+	margin-top: 30px;
+}
+
+.landing-feature .feature {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.landing-feature .feature .Badge{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+.Badge .text {
+	width: 600px;
+	height: 500px;
+	background-color: #E7FAFE;
+	padding: 0 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Badge .text h1 {
+  width: 520px;
+	height: 154px;
+	font-weight: 600;
+	font-size: 64px;
+	margin: 0;
+}
+
+.Badge .text p {
+	width: 520px;
+  height: 80px;
+  font-weight: 300;
+  font-size: 16px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.Badge .text .info {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.Badge .text .info div{
+	width: 140px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+}
+
+.Badge .text .info div span {
+	font-weight: 500;
+	font-size: 14px;
+	margin-left: 14px;
+}
+
+.Badge .text .view {
+	width: 200px;
+	height: 60px;
+	border-radius: 16px;
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.Badge .text .view span {
+	font-weight: 600;
+	font-size: 14px;
+
+}
+
+.Badge img{
+	width: 980px;
+	height: 500px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -99;
+	object-fit: cover;
+	border-radius: 30px;
+}
