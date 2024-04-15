@@ -1,0 +1,83 @@
+body {
+    width: 1280px;
+    height: 733px;
+    top: 194px;
+    left: 80px;
+}
+
+h1 {
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    left: 65%;
+}
+
+.one, .three, .four {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10px;
+    position: relative;
+    left: 55%;
+}
+
+.one {
+    bottom: 450px
+}
+
+.three {
+    bottom: 400px;
+}
+
+.four {
+    bottom: 330px;
+}
+
+.two, .five {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    order: 2;
+    position: relative;
+}
+
+.two {
+    right: 150px;
+    bottom: 400px
+}
+
+.five {
+    right: 170px;
+    bottom: 340px
+}
+
+input {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: -80px;
+    border-width: 1%;
+}
+
+.sub {
+    color: antiquewhite;
+    background-color: black;
+    border: 5px solid;
+    font-size: 15px;
+    width: 13%;
+    height: 60px;
+    border-radius: 25px;
+    position: relative;
+    left: 62%;
+    bottom: 280px;
+}
+
+.five input {
+    margin-right: -97px;
+}
+
+.side {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 40px;
+}
