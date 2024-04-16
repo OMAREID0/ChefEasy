@@ -9,7 +9,9 @@ h1 {
     font-weight: bold;
     display: flex;
     position: relative;
-    left: 65%;
+    left: 70%;
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
 }
 
 .one, .three, .four {
@@ -18,19 +20,22 @@ h1 {
     align-items: flex-start;
     padding-right: 10px;
     position: relative;
-    left: 55%;
+    left: 48%;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
 }
 
+
 .one {
-    bottom: 450px
+    bottom: 467px;
 }
 
 .three {
-    bottom: 400px;
+    bottom: 537px;
 }
 
 .four {
-    bottom: 330px;
+    bottom: 603px;
 }
 
 .two, .five {
@@ -39,23 +44,30 @@ h1 {
     align-items: flex-end;
     order: 2;
     position: relative;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .two {
-    right: 150px;
-    bottom: 400px
+    right: 75px;
+    bottom: 569px
 }
 
 .five {
-    right: 170px;
-    bottom: 340px
+    right: 90px;
+    bottom: 639px
 }
 
 input {
+    width: 410px;
+    height: 70px;
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: -80px;
+    margin-left: 1px;
+    margin-right: -240px;
     border-width: 1%;
+    border-radius: 10px;
+    border: 0.03px solid;
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .sub {
@@ -68,12 +80,21 @@ input {
     border-radius: 25px;
     cursor: pointer;
     position: relative;
-    left: 62%;
-    bottom: 280px;
+    left: 75%;
+    bottom: 550px;
+    font-family: 'Inter', sans-serif;
 }
 
+.four input {
+    width: 870px;
+    height: 192px;
+}
+
+.two input {
+    margin-right: -292px;
+}
 .five input {
-    margin-right: -97px;
+    margin-right: -305px;
 }
 
 .side {
