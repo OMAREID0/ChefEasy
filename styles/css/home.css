@@ -92,7 +92,7 @@ header button {
   font-size: 16px;
   letter-spacing: 1px;
 	cursor: pointer;
-	border:none
+	border: none;
 }
 header button:hover {
   background-color: #3A795B;
@@ -101,6 +101,8 @@ header button:hover {
 
 .landing-feature {
 	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 500px;
 }
 
 .landing-feature .feature {
@@ -142,7 +144,7 @@ header button:hover {
 	width: 520px;
   height: 80px;
   font-weight: 300;
-  font-size: 16px;
+	font-size: 16px;
 	margin: 0;
 	margin-bottom: 10px;
 }
@@ -198,3 +200,64 @@ header button:hover {
 	object-fit: cover;
 	border-radius: 30px;
 }
+
+
+.categories {
+	height: 342px;
+	margin-top: 60px;
+	margin-bottom:  60px;
+}
+
+.categories h2 {
+	font-weight: 600;
+	font-size: 48px;
+}
+
+.categories ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.categories ul li {
+	width: 160px;
+	height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.categories ul li:hover {
+  border-radius: 10px;
+	box-shadow: 1px 4px 11px 0px black;
+	transform: translateY(-10px);
+}
+
+.categories ul li > img {
+	width: 80px;
+	height: 80px;
+}
+
+.categories ul li > span {
+  font-weight: 600;
+	font-size: 18px;
+}
+.categories .breakfast {
+  background-color: rgba(112, 130, 70, 0.1);
+}
+.categories .vegan {
+  background-color: rgba(108, 198, 63, 0.1);
+}
+.categories .meat {
+  background-color: rgba(204, 38, 27, 0.1);
+}
+.categories .dessert {
+  background-color: rgba(240, 158, 0, 0.1);
+}
+.categories .lunch {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
