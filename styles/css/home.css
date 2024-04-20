@@ -261,3 +261,96 @@ header button:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.recipes .header {
+	text-align: center;
+}
+
+.recipes .header h2 {
+	font-weight: 600;
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.recipes .header p {
+	width: 705px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	margin: auto;
+}
+
+.recipes .all-recipes {
+	display: grid;
+	margin-top: 75px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.recipes .all-recipes .meal {
+	width: 350px;
+	height: 400px;
+	background-color: rgba(231, 249, 253, 1);
+	border-radius: 30px;
+	padding: 0 10px;
+	position: relative;
+	margin-bottom: 50px;
+
+}
+
+.all-recipes .meal img{
+  width: 330px;
+	height: 250px;
+	border-radius: 30px;
+	object-fit: cover;
+	position: relative;
+	bottom: 10px;
+}
+
+.all-recipes .meal .favorite {
+  width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 5px;
+	right: 25px;
+}
+
+.all-recipes .meal .favorite .check {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.all-recipes .meal .favorite .fav {
+	color: red;
+  display: none;
+}
+
+.all-recipes .meal .favorite .check:hover .non-fav{
+  display: none;
+}
+.all-recipes .meal .favorite .check:hover .fav{
+  display: block;
+}
+
+.all-recipes .meal p {
+  width: 352px;
+	height: 64px;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.all-recipes .meal .info {
+	display: flex;
+	justify-content: space-between;
+	width: 225px;
+	margin-left: 10px;
+}
+
