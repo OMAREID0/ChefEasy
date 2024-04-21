@@ -354,3 +354,88 @@ header button:hover {
 	margin-left: 10px;
 }
 
+.subscribe {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 442px;
+	background-color:rgba(231, 249, 253, 1);
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 50px;
+}
+.subscribe img {
+  width: 400px;
+	height: 400px;
+}
+
+.subscribe img:first-child {
+	position: absolute;
+	left: -100px;
+	bottom: -150px;
+	transform: rotate(10deg);
+}
+
+.subscribe img:last-child {
+  position: absolute;
+	right: -120px;
+	bottom: -170px;
+}
+
+.subscribe img:nth-of-type(2) {
+  width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 250px;
+	bottom: 126px;
+	transform: rotate(-50deg);
+}
+
+.subscribe .box {
+  width: 620px;
+	height:282px;
+	margin:100px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.subscribe .box h2 {
+  font-weight: 600;
+	font-size: 45px;
+}
+
+.subscribe .box .button {
+  width: 480px;
+	height: 80px;
+	padding: 5px;
+	background-color: white;
+	border-radius: 20px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subscribe .box .button input[type="email"] {
+	width: 480px;
+	height: 80px;
+	border: none;
+	padding-left: 10px;
+	border-radius: 20px;
+}
+
+.subscribe .box .button input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe .box .button input[type="button"] {
+  width: 150px;
+	height: 70px;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	background-color: black;
+	font-weight: 600;
+	font-size: 16px;
+}
