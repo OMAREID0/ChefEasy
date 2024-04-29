@@ -29,7 +29,7 @@
 
 .loop-controller {
   flex-direction: column;
-  gap: var(--gap-5xs);
+  gap: 8px;
 }
 .decision-maker,
 .input-cluster,
@@ -44,14 +44,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-}
 
 .error-logger {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-smi) 0 0;
+  padding: 13px 0 0;
 }
 .minutes,
 .prep-time {
@@ -65,23 +64,23 @@
   white-space: nowrap;
 }
 .minutes {
-  font-size: var(--font-size-sm);
+  font-size: 14px;
   letter-spacing: -0.02em;
-  color: var(--color-gray-100);
+  color: rgba(0, 0, 0, 0.6);
   min-width: 71px;
 }
 .event-transformer {
   flex-direction: column;
-  gap: var(--gap-5xs);
+  gap: 8px;
 }
 .event-receiver {
   flex-direction: column;
-  padding: var(--padding-8xs) 0 0;
+  padding: 5px 0 0;
 }
 .prep-time-dev {
   height: 50px;
   flex-direction: row;
-  gap: var(--gap-base);
+  gap: 16px;
 }
 .event-validator-icon {
   height: 50px;
@@ -90,7 +89,7 @@
   min-height: 50px;
 }
 .timer {
-  border-color: var(--color-black-100);
+  border-color: #000;
   accent-color: #000;
   cursor: pointer;
   margin: 0;
@@ -117,16 +116,16 @@
 }
 .data-routing {
   flex-direction: column;
-  gap: var(--gap-5xs);
+  gap: 8px;
 }
 
 .event-splitter {
   flex-direction: row;
-  gap: var(--gap-base);
+  gap: 16px;
 }
 .event-combiner {
   flex-direction: column;
-  padding: var(--padding-8xs) 0 0;
+  padding: 5px 0 0;
 }
 .data-mirror-icon,
 .forkknife-icon {
@@ -150,12 +149,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-10xs) 0 0;
+  padding: 3px 0 0;
 }
 .data-archive {
   flex-direction: row;
   justify-content: flex-start;
-  gap: var(--gap-3xs);
+  gap: 3px;
 }
 .data-archive,
 .data-cache,
@@ -166,15 +165,15 @@
 .data-cache {
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--padding-smi) 0 0;
+  padding: 13px 0 0;
 }
 .main-type {
   width: 119px;
   flex-direction: row;
   justify-content: space-between;
-  gap: var(--gap-xl);
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-100);
+  gap: 20px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .recipe-details-child {
   flex-direction: row;
@@ -208,8 +207,8 @@
   width: 400px;
   height: 600px;
   position: relative;
-  border-radius: var(--br-11xl);
-  background-color: var(--color-azure);
+  border-radius: 30px;
+  background-color: #e7fafe;
   display: none;
   max-width: 100%;
 }
@@ -228,7 +227,7 @@
   min-width: 66px;
 }
 .kcal {
-  color: var(--color-black-200);
+  color: #000;
   text-align: right;
   min-width: 80px;
 }
@@ -238,7 +237,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: var(--gap-xl);
+  gap: 20px;
   padding: 10px;
 }
 .stack-manager-icon {
@@ -261,8 +260,8 @@
 }
 .data-sink {
   gap: 15.6px;
-  font-size: var(--font-size-lg);
-  color: var(--color-gray-100);
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .data-merger {
   gap: 24px;
@@ -302,7 +301,7 @@
 .subtree {
   flex: 1;
   flex-direction: column;
-  gap: var(--gap-45xl);
+  gap: 65px;
 }
 .recipe-details-inner {
   align-self: stretch;
