@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <!-- For Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--css-->
+    <link rel="stylesheet" href="../static/css/normalize.css" />
+    <link rel="stylesheet" href="../static/css/all.min.css" />
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/contact.css" />
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <link rel="stylesheet" href="../static/css/recipe.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="{% url 'home' %}" class="logo">ChefEasy</a>
+
+        <ul class="navigation">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'recipe' %}">Recipes</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'contact' %}">About Us</a></li>
+        </ul>
+
+        <div class="account">
+          <a href="/templates/login.html"
+            ><button type="button">Login</button></a
+          >
+          <a href="/templates/login.html"
+            ><button type="button">Sign Up</button></a
+          >
+        </div>
+      </div>
+    </header>
+    {% block content %}{% endblock %}
+    <section class="container subscribe">
+      <img src="../static/images/box1.png" alt="" />
+      <div class="box">
+        <h2>Deliciousness to your inbox</h2>
+        <div class="button">
+          <input type="email" placeholder="Your email address" />
+          <input type="button" value="Subscribe" />
+        </div>
+      </div>
+      <img src="../static/images/box3.png" alt="" />
+      <img src="../static/images/box2.png" alt="" />
+    </section>
+    <footer>
+      <div class="container">
+        <a href="#" class="logo">ChefEasy</a>
+        <ul class="navigation">
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,480 @@
+.recipe-page {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 40px 0 48px;
+  gap: 79px;
+  line-height: normal;
+  letter-spacing: normal;
+  box-sizing: border-box;
+}
+.Recipe-name {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  font-family: inherit;
+}
+.parallel-processor-icon {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 50px;
+}
+
+.loop-controller {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.decision-maker,
+.input-cluster,
+.loop-controller,
+.recipe-page,
+.prep-time-dev,
+.event-receiver,
+.event-transformer,
+.data-routing,
+.event-combiner,
+.event-splitter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.error-logger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.minutes,
+.prep-time {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.prep-time {
+  letter-spacing: 0.1em;
+  min-width: 73px;
+  white-space: nowrap;
+}
+.minutes {
+  font-size: var(--font-size-sm);
+  letter-spacing: -0.02em;
+  color: var(--color-gray-100);
+  min-width: 71px;
+}
+.event-transformer {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.event-receiver {
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+}
+.prep-time-dev {
+  height: 50px;
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.event-validator-icon {
+  height: 50px;
+  width: 1px;
+  position: relative;
+  min-height: 50px;
+}
+.timer {
+  border-color: var(--color-black-100);
+  accent-color: #000;
+  cursor: pointer;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.input-processor-chain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0 0;
+}
+.cook-time {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.cook-time {
+  letter-spacing: 0.1em;
+  min-width: 78px;
+  white-space: nowrap;
+}
+.data-routing {
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+
+.event-splitter {
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.event-combiner {
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+}
+.data-mirror-icon,
+.forkknife-icon {
+  height: 50px;
+  width: 1px;
+  position: relative;
+}
+.forkknife-icon {
+  height: 24px;
+  width: 24px;
+}
+.main-ing {
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 53px;
+}
+.logic-gate1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.data-archive {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.data-archive,
+.data-cache,
+.main-type {
+  display: flex;
+  align-items: flex-start;
+}
+.data-cache {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.main-type {
+  width: 119px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+}
+.recipe-details-child {
+  flex-direction: row;
+  padding: 0 2px 0 0;
+  box-sizing: border-box;
+  gap: 31px;
+  font-size: 12px;
+}
+.Headline {
+  flex-direction: column;
+  gap: 48px;
+}
+.error-handler-child {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.recipe-image {
+  height: 600px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  min-width: 546px;
+  min-height: 600px;
+  padding-left: 80px;
+}
+.nutrition-card-child {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-azure);
+  display: none;
+  max-width: 100%;
+}
+.calories,
+.kcal,
+.nutrition-information {
+  position: relative;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  z-index: 1;
+}
+.calories,
+.kcal {
+  font-weight: 500;
+  display: inline-block;
+  min-width: 66px;
+}
+.kcal {
+  color: var(--color-black-200);
+  text-align: right;
+  min-width: 80px;
+}
+.stack-manager {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  padding: 10px;
+}
+.stack-manager-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+  padding: 10px;
+}
+
+.data-merger,
+.data-sink {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.data-sink {
+  gap: 15.6px;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-100);
+}
+.data-merger {
+  gap: 24px;
+}
+.nutrition-card {
+  width: 400px;
+  border-radius: 30px;
+  background-color: #e7fafe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px;
+  box-sizing: border-box;
+  gap: 166px;
+  min-width: 400px;
+  max-width: 100%;
+}
+.image-card {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 24px;
+  margin-right: 60px;
+}
+.recipe-details-inner,
+.image-card,
+.subtree,
+.recipe-details-child,
+.Headline,
+.ingerdians-section-dev {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.subtree {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-45xl);
+}
+.recipe-details-inner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 80px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 64px;
+  color: #000;
+  font-family: Inter;
+}
+.info {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  z-index: 1;
+}
+.ingerdians-section {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 80px 80px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Inter;
+  height: 40px;
+}
+.ingerdians-section-dev {
+  flex: 1;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.under-image-p {
+  align-self: center;
+  position: relative;
+  line-height: 28px;
+}
+
+.side-bar {
+  width: 20%;
+  position: absolute;
+  right: 60px;
+}
+
+.first-recipe-pic {
+  height: 170px;
+  width: 180px;
+  position: relative;
+  border-radius: 10%;
+}
+
+.recipe-first-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.mixed-tropical-fruit {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.04em;
+  line-height: 26px;
+  font-weight: 600;
+  padding-left: 7px;
+}
+
+.healthy {
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 50px;
+  padding-left: 7px;
+}
+
+.minutes2 {
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  display: block;
+  min-width: 73px;
+  padding-left: 7px;
+}
+
+.how-to-do {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.content-sie-bar {
+  width: 75%;
+  margin-right: 20px;
+  padding-right: 20px;
+  margin-left: 80px;
+}
+
+.list-item {
+  background: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border: 1px solid #004c63;
+  border-radius: 50%;
+}
+
+.checkbox:checked::after {
+  content: "\2713";
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: -2px;
+  left: 0;
+}
+
+.task {
+  font-family: inter;
+  position: relative;
+  transition: 0.5s;
+  margin-left: 60px;
+  max-width: 75%;
+}
+.task::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.checkbox:checked ~ .task {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.checkbox:checked ~ .task::before {
+  width: 110%;
+}
+
+hr {
+  margin: 25px;
+  width: 80%;
+}
+
+.Ingredients-h1 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.sauce-list {
+  margin-top: 50px;
+}
+.Directions-sec {
+  margin-top: 80px;
+}

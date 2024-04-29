@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Log in{% endblock %}
+{% block content%}
+<div class="container">
+  <h1>Contact us</h1>
+  <div class="main">
+    <img src="images/fresh.jpg" alt="Side Image" , class="side" />
+    <form>
+      <div class="first">
+        <div class="one">
+          <label>NAME</label><br />
+          <input type="text" , placeholder="Enter your name..." />
+        </div>
+        <div class="two">
+          <label>EMAIL ADDRESS</label><br />
+          <input type="text" , placeholder="Your email address..." />
+        </div>
+      </div>
+      <div class="second">
+        <div class="three">
+          <label>SUBJECT</label><br />
+          <input type="text" , placeholder="Enter subject..." />
+        </div>
+        <div class="five">
+          <label>ENQUIRY TYPE</label><br />
+          <input type="text" , placeholder="Enter your messages.." />
+        </div>
+      </div>
+      <div class="four">
+        <label>MESSAGES</label><br />
+        <input type="text" , placeholder="Advertising..." />
+      </div>
+      <input type="Submit" , class="sub" />
+    </form>
+  </div>
+</div>
+{% endblock %}
