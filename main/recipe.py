@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     params = {
         "minCholesterol": "0",
-        "number": "5", 
+        "number": "1", 
     }
 
     try:
@@ -24,6 +24,8 @@ if __name__ == "__main__":
                 x = recipe['id']
                 #print (x)
                 print(f"Recipe Name: {recipe['title']}")
+                print(f"Image: {recipe['image']}")
+                print(f"Author: {recipe['author']}")
                 print(f"Calories: {recipe['calories']}")
                 print(f"Total Fat: {recipe['fat']}")
                 print(f"Protein: {recipe['protein']}")
@@ -35,6 +37,8 @@ if __name__ == "__main__":
                 print(f"Number Of Serving People: {url2['servings']}")
                 print("")  # Add a blank line between recipes for clarity
                 #print(recipe) # Output each recipe dictionary
+                url3 = requests.get(f"https://api.spoonacular.com/recipes/{x}/ingredientWidget?apiKey={key}").json()
+                print (url3)
             #print(data)
         else:
             print(f"Failed to retrieve data. Status code: {response.status_code}")

@@ -21,7 +21,7 @@ if __name__ == "__main__":
         "maxCarbs" : "50"
         #"maxReadyTime" : argv[3]
     }
-    
+
     try:
         response = requests.get(url, params=params)
         if response.status_code == 200:
