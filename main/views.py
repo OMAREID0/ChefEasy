@@ -6,7 +6,8 @@ import json
 
 # Create your views here.
 def home_page(request):
-    return render(request, 'home.html')
+    numbers = range(9)
+    return render(request, 'home.html', {'numbers': numbers})
 
 def recipe_page(request):
     return render(request, 'recipe.html')
