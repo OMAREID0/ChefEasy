@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block css%}
+<link rel="stylesheet" href="../../../static/css/base.css" />
+<style>
+  .form-box {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-banner input[type="text"],
+  .hero-banner input[type="email"],
+  .hero-banner textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  p {
+    width: 100%;
+  }
+  .hero-banner input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hero-banner input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 20px;
+  }
+  .profile-photo-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+</style>
+{% endblock %} {% block content %}
+<div class="form-box">
+  <div class="hero-banner">
+    <div class="profile-photo">
+      <img
+        class="profile-photo-img"
+        src="../../../media/images/945908.png"
+        alt=""
+      />
+    </div>
+    <form method="POST">
+      {% csrf_token %} {{userform.as_p}} {{profileform.as_p}}
+      <input style="display: block; margin: auto" type="submit" value="Edit" />
+    </form>
+  </div>
+</div>
+{% endblock %}

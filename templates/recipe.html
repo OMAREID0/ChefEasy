@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% block title %}Log in{% endblock %}
+{% block title %}Recipe{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="../static/css/recipe.css" />
+{% endblock %}
 {% block content %}
 <div class="recipe-page">
         <div class="recipe-details">
           <section class="recipe-details-inner">
             <div class="subtree">
               <div class="Headline">
-                <h1 class="Recipe-name">{{ingredients}}</h1>
+                <h1 class="Recipe-name">Pizza be el gebna</h1>
                 <div class="recipe-details-child">
                   <div class="prep-time-dev">
                     <div class="error-logger">
@@ -241,5 +244,17 @@
         </aside>
       </div>
     </section>
+  </section>
+  <section class="container subscribe">
+    <img src="../static/images/box1.png" alt="" />
+    <div class="box">
+      <h2>Deliciousness to your inbox</h2>
+      <div class="button">
+        <input type="email" placeholder="Your email address" />
+        <input type="button" value="Subscribe" />
+      </div>
+    </div>
+    <img src="../static/images/box3.png" alt="" />
+    <img src="../static/images/box2.png" alt="" />
   </section>
 {% endblock %}

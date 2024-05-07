@@ -44,7 +44,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-
+}
 .error-logger {
   display: flex;
   flex-direction: column;
@@ -108,8 +108,6 @@
   position: relative;
   font-weight: 500;
   display: inline-block;
-}
-.cook-time {
   letter-spacing: 0.1em;
   min-width: 78px;
   white-space: nowrap;

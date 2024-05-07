@@ -1,0 +1,239 @@
+* {
+  -webkit-box-sizing: border-box;
+  -mod-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  box-shadow: 0 0 10px #ddd;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  width: 110px;
+  font-family: "Lobster", sans-serif;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+
+header .navigation {
+  display: flex;
+}
+
+header .navigation li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  padding: 0 30px;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+header .navigation li a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #3a795b;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  transition: 0.3s;
+}
+
+header .navigation li a:hover::before {
+  left: 0;
+}
+
+header button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+}
+header button:hover {
+  background-color: #3a795b;
+  color: #ddd;
+}
+.subscribe {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 442px;
+  background-color: rgba(231, 249, 253, 1);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.subscribe img {
+  width: 400px;
+  height: 400px;
+}
+
+.subscribe img:first-child {
+  position: absolute;
+  left: -100px;
+  bottom: -150px;
+  transform: rotate(10deg);
+}
+
+.subscribe img:last-child {
+  position: absolute;
+  right: -120px;
+  bottom: -170px;
+}
+
+.subscribe img:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 250px;
+  bottom: 126px;
+  transform: rotate(-50deg);
+}
+
+.subscribe .box {
+  width: 620px;
+  height: 282px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.subscribe .box h2 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.subscribe .box .button {
+  width: 480px;
+  height: 80px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe .box .button input[type="email"] {
+  width: 480px;
+  height: 80px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 20px;
+}
+
+.subscribe .box .button input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe .box .button input[type="button"] {
+  width: 150px;
+  height: 70px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer {
+  position: relative;
+  box-shadow: 0 10px 0 #ddd;
+  margin-top: 100px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .logo {
+  width: 110px;
+  font-family: "Lobster", sans-serif;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+
+footer .navigation {
+  display: flex;
+}
+
+footer .navigation li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  padding: 0 30px;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+footer .navigation li a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #3a795b;
+  bottom: 0;
+  left: -100%;
+  position: absolute;
+  transition: 0.3s;
+}
+
+footer .navigation li a:hover::before {
+  left: 0;
+}
+
+footer button {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+}
+footer button:hover {
+  background-color: #3a795b;
+  color: #ddd;
+}

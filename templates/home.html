@@ -1,5 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Log in{% endblock %}
+{% block title %}ChefEasy{% endblock %}
+{% block css%}
+<link rel="stylesheet" href="../static/css/normalize.css" />
+<link rel="stylesheet" href="../static/css/all.min.css" />
+<link rel="stylesheet" href="../static/css/home.css" />
+{% endblock %}
 {% block content %}
 <!-- Feature Recipe -->
   <section class="container landing-feature">
@@ -246,6 +251,17 @@
         </div>
       </div>
     </div>
-
+  </section>
+  <section class="container subscribe">
+    <img src="../static/images/box1.png" alt="" />
+    <div class="box">
+      <h2>Deliciousness to your inbox</h2>
+      <div class="button">
+        <input type="email" placeholder="Your email address" />
+        <input type="button" value="Subscribe" />
+      </div>
+    </div>
+    <img src="../static/images/box3.png" alt="" />
+    <img src="../static/images/box2.png" alt="" />
   </section>
 {% endblock %}
