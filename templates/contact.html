@@ -1,6 +1,6 @@
-{% extends "base.html" %}
-{% block title %}Log in{% endblock %}
-{% block content%}
+{% extends "base.html" %} {% block title %}Log in{% endblock %} {% block css%}
+<link rel="stylesheet" href="../static/css/contact.css" />
+{% endblock %} {% block content%}
 <div class="container">
   <h1>Contact us</h1>
   <div class="main">
@@ -34,4 +34,16 @@
     </form>
   </div>
 </div>
+<section class="container subscribe">
+  <img src="../static/images/box1.png" alt="" />
+  <div class="box">
+    <h2>Deliciousness to your inbox</h2>
+    <div class="button">
+      <input type="email" placeholder="Your email address" />
+      <input type="button" value="Subscribe" />
+    </div>
+  </div>
+  <img src="../static/images/box3.png" alt="" />
+  <img src="../static/images/box2.png" alt="" />
+</section>
 {% endblock %}
