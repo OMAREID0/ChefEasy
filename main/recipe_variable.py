@@ -35,6 +35,9 @@ if __name__ == "__main__":
                 url2 = requests.get(f"https://api.spoonacular.com/recipes/{x}/information?apiKey={key}").json()
                 recipe_info.append(f"Ready in Minutes: {url2['readyInMinutes']}")
                 recipe_info.append(f"Number Of Serving People: {url2['servings']}")
+                dish_types = url2.get('dishTypes', [])  # Get the list of dish types
+                if dish_types:
+                    recipe_info.append(f"Dish Type: {dish_types[1]}")
                 recipe_info.append(f"Summary: {url2['summary']}")
                 
                 

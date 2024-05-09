@@ -23,7 +23,6 @@ if __name__ == "__main__":
                 x = recipe['id']
                 print(f"Recipe Name: {recipe['title']}")
                 print(f"Image: {recipe['image']}")
-                print(f"Author: {recipe['author']}")
                 print(f"Calories: {recipe['calories']}")
                 print(f"Total Fat: {recipe['fat']}")
                 print(f"Protein: {recipe['protein']}")
@@ -35,7 +34,10 @@ if __name__ == "__main__":
                 print(f"Number Of Serving People: {url2['servings']}")
                 print("")
                 print(f"Summary: {url2['summary']}")
-                print(f"Dish Type: {url2['dishTypes']}")
+                print("")
+                dish_types = url2.get('dishTypes', [])  # Get the list of dish types
+                if dish_types:
+                    print(f"Dish Type: {dish_types[1]}")
                 print("")
                 
                 url4 = requests.get(f"https://api.spoonacular.com/recipes/{x}/ingredientWidget.json?apiKey={key}").json()
