@@ -5,7 +5,7 @@ Using the Spoonacular API to search for recipes based on a query in an object-or
 
 import requests
 
-class RecipeSearcher:
+class VeganSearcher:
     def __init__(self, api_key):
         self.api_key = api_key
         self.base_url = "https://api.spoonacular.com/recipes/complexSearch"
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     key = "cfe4b169bfc24c4a99c6801be60b38b4"
 
     # Create an instance of RecipeSearcher
-    recipe_searcher = RecipeSearcher(api_key=key)
+    recipe_searcher = VeganSearcher(api_key=key)
     
     # Search for vegan recipes
     query = "vegan"
