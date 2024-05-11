@@ -14,7 +14,7 @@ class RecipeInfoFinder:
         params = {
             "apiKey": self.api_key,
             "minCholesterol": "0",
-            "number": "2"
+            "number": "1"
         }
         try:
             response = requests.get(url, params=params)
