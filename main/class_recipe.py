@@ -6,8 +6,8 @@ Using the Spoonacular API to search for recipes based on a query in an object-or
 import requests
 
 class RecipeInfoFinder:
-    def __init__(self, api_key):
-        self.api_key = api_key
+    # Define the API key as a class attribute
+    api_key = "cfe4b169bfc24c4a99c6801be60b38b4"
 
     def find_recipe_by_nutrients(self):
         url = "https://api.spoonacular.com/recipes/findByNutrients"
