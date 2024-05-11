@@ -7,6 +7,11 @@ import json
 
 # Create your views here.
 def home_page(request):
+    recipe_finder = RecipeInfoFinder()
+
+    recipes = recipe_finder.find_recipe_by_nutrients()
+
+    print(recipes)
     return render(request, 'home.html')
 
 def recipe_page(request):
@@ -15,9 +20,10 @@ def recipe_page(request):
 
     # Get recipe information
     recipe_info_dict = recipe_finder.get_recipe_info()
+    print(recipe_info_dict)
 
     # Render the data in a template
-    return render(request, 'recipe.html', {'recipe_info_dict': recipe_info_dict})
+    return render(request, 'recipe.html', recipe_info_dict)
 
 def contact_page(request):
     return render(request, 'contact.html')
