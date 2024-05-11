@@ -70,7 +70,7 @@
     </div>
 
     <div class="all-recipes">
-      <div class="meal">
+      <!-- <div class="meal">
         <img src="../static/images/meal.png" alt="">
         <div class="favorite">
           <div class="check">
@@ -249,19 +249,32 @@
             <span>Chicken</span>
           </div>
         </div>
-      </div>
+      </div> -->
+
+      <!-- making 9 dives with jinja template -->
+      {% for i in numbers %}
+        <div class="meal">
+          <img src="../static/images/meal.png" alt="">
+          <div class="favorite">
+            <div class="check">
+              <i class="fa-regular fa-heart non-fav"></i>
+              <i class="fa-solid fa-heart fav"></i>
+            </div>
+          </div>
+          <p>Big and Juicy Wagyu Beef Cheeseburger</p>
+          <div class="info">
+            <div class="time">
+              <i class="fa-solid fa-stopwatch"></i>
+              <span>30 Minutes</span>
+            </div>
+            <div class="type">
+              <i class="fa-solid fa-utensils"></i>
+              <span>Chicken</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  </section>
-  <section class="container subscribe">
-    <img src="../static/images/box1.png" alt="" />
-    <div class="box">
-      <h2>Deliciousness to your inbox</h2>
-      <div class="button">
-        <input type="email" placeholder="Your email address" />
-        <input type="button" value="Subscribe" />
-      </div>
-    </div>
-    <img src="../static/images/box3.png" alt="" />
-    <img src="../static/images/box2.png" alt="" />
+
   </section>
 {% endblock %}
