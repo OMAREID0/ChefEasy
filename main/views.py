@@ -16,7 +16,6 @@ def recipe_page(request):
 
     # Get recipe information
     recipe_info = recipe_finder.get_recipe_info()
-    print(recipe_info[634927].get('title'))
 
     # Render the data in a template
     return render(request, 'recipe.html', {'recipe_info': recipe_info})

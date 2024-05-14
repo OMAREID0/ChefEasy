@@ -9,7 +9,7 @@
           <section class="recipe-details-inner">
             <div class="subtree">
               <div class="Headline">
-                <h1 class="Recipe-name">{{ recipe_info.get('634927').get('title') }}</h1>
+                <h1 class="Recipe-name">{{ recipe_info.title }}</h1>
                 <div class="recipe-details-child">
                   <div class="prep-time-dev">
                     <div class="error-logger">
@@ -17,7 +17,7 @@
                     </div>
                     <div class="event-receiver">
                       <div class="event-transformer">
-                        <div class="prep-time">PREP TIME</div>
+                        <div class="prep-time">{{ recipe_info.ready_in_minutes }}</div>
                         <div class="minutes"> Minutes</div>
                       </div>
                     </div>
@@ -29,7 +29,7 @@
                         <img class="timer" src="../static/images/clock-line-icon.svg" />
                       </div>
                       <div class="data-routing">
-                        <div class="cook-time">COOK TIME</div>
+                        <div class="cook-time">{{ recipe_info.servings }}</div>
                         <div class="minutes"> Minutes</div>
                       </div>
                     </div>
@@ -56,27 +56,27 @@
             <div class="data-sink">
               <div class="stack-manager">
               <div class="calories">Calories</div>
-              <div class="kcal"> kcal</div>
+              <div class="kcal"> {{ recipe_info.calories }} kcal</div>
             </div>
             <img class="stack-manager-icon" alt="" src="../static/images/stack-manager.svg" />
             <div class="stack-manager">
-              <div class="calories">Calories</div>
-              <div class="kcal"> kcal</div>
+              <div class="calories">protein</div>
+              <div class="kcal"> {{ recipe_info.protein }} kcal</div>
             </div>
             <img class="stack-manager-icon" alt="" src="../static/images/stack-manager.svg" />
             <div class="stack-manager">
-              <div class="calories">Calories</div>
-              <div class="kcal"> kcal</div>
+              <div class="calories">Fat</div>
+              <div class="kcal"> {{recipe_info.total_fat}} kcal</div>
             </div>
             <img class="stack-manager-icon" alt="" src="../static/images/stack-manager.svg" />
             <div class="stack-manager">
-              <div class="calories">Calories</div>
-              <div class="kcal"> kcal</div>
+              <div class="calories">carbohydrate</div>
+              <div class="kcal"> {{recipe_info.carbohydrate}} kcal</div>
             </div>
             <img class="stack-manager-icon" alt="" src="../static/images/stack-manager.svg" />
             <div class="stack-manager">
-              <div class="calories">Calories</div>
-              <div class="kcal"> kcal</div>
+              <div class="calories">cholesterol</div>
+              <div class="kcal"> {{ recipe_info.cholesterol}} kcal</div>
             </div>
             <img class="stack-manager-icon" alt="" src="../static/images/stack-manager.svg" />
             <div class="info">
@@ -88,7 +88,7 @@
       </div>
       <section class="ingerdians-section">
         <div class="ingerdians-section-dev">
-          <div class="under-image-p">Low Carb • Sugar Conscious • Keto Friendly • Pescatarian • Gluten Free • Wheat Free • Peanut Free • Tree Nut Free • Soy Free • Fish Free • Shellfish Free • Pork Free • Red Meat Free • Crustacean Free • Celery Free • Mustard Free • Sesame Free • Lupine Free • Mollusk Free • Alcohol Free • No oil added • Kosher • Immuno Supportive</div>
+          <div class="under-image-p">{{recipe_info.summary}}</div>
         </div>
       </section>
     </div>

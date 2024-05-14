@@ -54,13 +54,14 @@ class RecipeInfoFinder:
                 recipe_details = self.get_recipe_details(recipe_id)
                 if recipe_details:
                     recipe_info = {
+                        'recipe_id': recipe_id,
                         "title": recipe_details.get('title'),
                         "image": recipe_details.get('image'),
-                        "calories": recipe_details.get('calories'),
-                        "total_fat": recipe_details.get('fat'),
-                        "protein": recipe_details.get('protein'),
-                        "carbohydrate": recipe_details.get('carbs'),
-                        "cholesterol": recipe_details.get('cholesterol'),
+                        "calories": nutrient_recipes[0].get('calories'),
+                        "total_fat": nutrient_recipes[0].get('fat'),
+                        "protein": nutrient_recipes[0].get('protein'),
+                        "carbohydrate": nutrient_recipes[0].get('carbs'),
+                        "cholesterol": nutrient_recipes[0].get('cholesterol'),
                         "ready_in_minutes": recipe_details.get('readyInMinutes'),
                         "servings": recipe_details.get('servings'),
                         "dish_type": recipe_details.get('dishTypes', [])[0] if recipe_details.get('dishTypes') else None,
@@ -76,6 +77,6 @@ class RecipeInfoFinder:
                             instruction = step.get('step', '')
                             if step_number and instruction:
                                 recipe_info["instructions"].append(f"Step {step_number}: {instruction}")
-                    recipe_info_dict[recipe_id] = recipe_info
+                    recipe_info_dict = recipe_info
 
         return recipe_info_dict
