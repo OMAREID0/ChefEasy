@@ -6,7 +6,7 @@
 # Authors
 - [Wessam Abdelnabi](https://www.linkedin.com/in/wessam-abdelnabi-3261751ba/)
 - [Islam Ahmed](https://www.linkedin.com/in/islam-ahmed-99463b1b3/)
-- [Omar Eid]()
+- [Omar Eid](https://www.linkedin.com/in/devomareid)
 
 # Installation
 *To get started with the Kid Coder Carnival Django project, follow these simple steps:*
