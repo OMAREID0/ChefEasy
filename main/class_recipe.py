@@ -80,22 +80,3 @@ class RecipeInfoFinder:
                     recipe_info_dict = recipe_info
 
         return recipe_info_dict
-
-    def get_nine_recipe_info(self):
-        simple_recipe_info_dict = {}
-        nutrient_recipes = self.find_recipe_by_nutrients()
-        if nutrient_recipes:
-            for recipe in nutrient_recipes:
-                recipe_id = recipe.get('id')
-                recipe_details = self.get_recipe_details(recipe_id)
-                if recipe_details:
-                    simple_recipe_info = {
-                        'id': recipe_id,
-                        'title': recipe_details.get('title'),
-                        'image': recipe_details.get('image'),
-                        'ready_in_minutes': recipe_details.get('readyInMinutes'),
-                        'servings': recipe_details.get('servings')
-                    }
-                    simple_recipe_info_dict[recipe_id] = simple_recipe_info
-
-        return simple_recipe_info_dict
